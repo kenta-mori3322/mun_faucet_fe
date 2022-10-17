@@ -84,6 +84,10 @@ export default {
         .post(this.config.claimUrl, {
           address: this.fields.address,
           coins: `["10utmun"]`,
+        },{
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+          "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
         })
         .then(() => {
           this.sending = false;
