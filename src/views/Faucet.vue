@@ -90,7 +90,7 @@ export default {
       axios
         .post(this.config.claimUrl, {
           address: this.fields.address,
-          coins: `["1000000utmun"]`,
+          coins: ["1000000utmun"],
         },{
           headers
         })
