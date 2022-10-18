@@ -83,7 +83,7 @@ export default {
 
       const data = JSON.stringify({
         address: this.fields.address,
-        coins: ["1000000utmun"]});
+        coins: ["10000000utmun"]});
       const options = {
         headers: {"content-type": "application/json"}
       };
