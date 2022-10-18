@@ -83,7 +83,7 @@ export default {
       axios
         .post(this.config.claimUrl, {
           address: this.fields.address,
-          coins: `["10000000utmun"]`,
+          coins: `["1000000utmun"]`,
         })
         .then(() => {
           this.sending = false;
