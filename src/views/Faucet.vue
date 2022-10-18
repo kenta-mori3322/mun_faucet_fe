@@ -80,10 +80,19 @@ export default {
       if (this.$v.$error) return;
 
       this.sending = true;
+
+      const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      };
+      
       axios
         .post(this.config.claimUrl, {
           address: this.fields.address,
           coins: `["1000000utmun"]`,
+        },{
+          headers
         })
         .then(() => {
           this.sending = false;
