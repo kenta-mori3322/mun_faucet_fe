@@ -81,18 +81,13 @@ export default {
 
       this.sending = true;
 
-      const headers = {
-        "Access-Control-Allow-Origin": "*",
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      };
       
       axios
         .post(this.config.claimUrl, {
-          address: this.fields.address,
-          coins: ["1000000utmun"],
+          'address': this.fields.address,
+          'coins': ["1000000utmun"],
         },{
-          headers
+          headers: {'Content-Type': 'application/json'}
         })
         .then(() => {
           this.sending = false;
