@@ -89,7 +89,9 @@ export default {
       }
       axios
         .post(this.config.claimUrl, data, options)
-        .then(() => {
+        .then((e) => {
+          console.log("result")
+          console.log(e)
           this.sending = false;
           this.$store.commit("notify", {
             title: "Successfully Sent",
