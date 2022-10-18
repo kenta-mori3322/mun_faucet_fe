@@ -81,17 +81,17 @@ export default {
 
       this.sending = true;
 
-      const data =JSON.stringify({
+      const data = JSON.stringify({
         address: this.fields.address,
-        coins: ["1000000utmun"]})
+        coins: ["1000000utmun"]});
       const options = {
         headers: {"content-type": "application/json"}
-      }
+      };
       axios
         .post(this.config.claimUrl, data, options)
         .then((e) => {
-          console.log("result")
-          console.log(e)
+          console.log("result");
+          console.log(e);
           this.sending = false;
           this.$store.commit("notify", {
             title: "Successfully Sent",
