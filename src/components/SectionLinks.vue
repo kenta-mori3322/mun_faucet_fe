@@ -4,24 +4,19 @@
     h1 Community Links
   .section-main
     list-item(
-      href="https://riot.im/app/#/room/#cosmos:matrix.org"
+      href="https://discord.gg/mun"
       target="_blank"
-      title="Community Chat"
+      title="MUN Community Chat"
       subtitle="#cosmos")
     list-item(
-      href="https://riot.im/app/#/room/#cosmos_validators:matrix.org"
+      href="https://blockexplorer.mun.money"
       target="_blank"
-      title="Validator Chat"
-      subtitle="#cosmos_validators")
-    list-item(
-      href="https://explorecosmos.network"
-      target="_blank"
-      title="Testnet Explorer"
+      title="MUN Testnet Explorer"
       subtitle="explorecosmos.network")
     list-item(
-      href="https://cosmos.network"
+      href="https://mun.money"
       target="_blank"
-      title="Cosmos Website"
+      title="MUN Website"
       subtitle="cosmos.network")
 </template>
 
