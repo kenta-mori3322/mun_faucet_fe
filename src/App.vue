@@ -3,11 +3,12 @@
   tm-cookie-consent
   .top-bar
     .left
-      .key testnet:
+      a(href="#") #[img(src="~assets/icon.svg" width="45" height="45")]
       .value {{ config.chain }}
     .right
       a(href="https://blockexplorer.mun.money/" target="_blank") explorer #[i.material-icons assessment]
-  img(src="~assets/brandmark.png" width="512" height="512")
+    .cube
+      img(src="~assets/cube.png" width="250" height="250")
   router-view
   notifications(:notifications='notifications' theme='cosmos')
   #bottom &copy; 2022 MUN Team
@@ -37,11 +38,6 @@ export default {
 <style lang="stylus">
 @import '~variables'
 
-img
-  position absolute
-  top -7rem
-  left -7rem
-  z-index 1
 
 .top-bar
   position fixed
@@ -60,9 +56,6 @@ img
   .left
     display flex
     padding 0 1rem
-  .key
-    text-transform: lowercase
-    margin-right 0.5rem
   .value
     font-weight bold
     color var(--bright)
@@ -76,6 +69,13 @@ img
       align-items center
       i
         margin-left 0.5rem
+  .cube
+    position absolute
+    img
+      position absolute
+      top 4rem
+      left 4rem
+      z-index 1
 #bottom
   color var(--bc)
   font-size 0.75rem

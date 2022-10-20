@@ -4,7 +4,7 @@
     h1 Don't have a testnet address?
     p Connect wallet to MUN to have mun address.
   .section-main
-    btn(type="anchor" href="https://node1.mun.money" value="Join the latest testnet" size="lg" target="_blank" icon="wifi_tethering")
+    btn(type="anchor" href="http://wallet.mun.money/" value="Join the latest testnet" size="lg" target="_blank" icon="wifi_tethering")
 </template>
 
 <script>
